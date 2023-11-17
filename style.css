@@ -187,7 +187,7 @@ main {
   flex: 1;
   background-color: #fff;
   color: #000;
-  min-width: 50rem;
+  min-width: 30rem;
   padding-bottom: 20rem;
 }
 
@@ -325,7 +325,7 @@ main {
 .followerSection {
   flex: 1;
   background-color: #000;
-  min-width: 50rem;
+  min-width: 30rem;
 }
 
 .followerTabs {
@@ -379,6 +379,13 @@ main {
   overflow-y: scroll;
 }
 
+@media (max-width: 768px) {
+  .followerList {
+    padding-inline: 1.5rem;
+    margin-inline: 1rem;
+  }
+}
+
 .followerListTitle {
   display: flex;
   justify-content: space-between;
@@ -409,7 +416,6 @@ main {
 }
 
 .itemNameContainer {
-  width: 10rem;
 }
 
 .itemName {
@@ -445,6 +451,12 @@ main {
   border: 0.2rem solid gray;
   color: #fff;
   outline: none;
+}
+
+@media (max-width: 768px) {
+  .genericButton {
+    padding: 0.5rem 1rem;
+  }
 }
 
 .genericButton > span {
